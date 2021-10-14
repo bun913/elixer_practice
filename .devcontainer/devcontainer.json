@@ -1,0 +1,12 @@
+{
+  "name": "ElixerDevContainer",
+  "image": "elixir:1.12.3",
+  "extensions": [
+    "jakebecker.elixir-ls",
+    "florinpatrascu.vscode-elixir-snippets",
+    "esbenp.prettier-vscode",
+    "codezombiech.gitignore",
+    "xyz.local-history",
+    "donjayamanne.githistory"
+  ]
+}
