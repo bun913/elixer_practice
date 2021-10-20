@@ -1,4 +1,4 @@
-# Elixer の基礎
+# elixir の基礎
 
 型
 
@@ -17,7 +17,7 @@
     - 区切り文字はスラッシュでも良いが、エスケープの手間がかかる
     - Perl の正規表現(PCRE)に準拠している
 
-```elixer
+```elixir
 # atom
 :bun
 # regex
@@ -38,7 +38,7 @@ Regex.scan ~r{[aeiou]}, "caterpillar"
     - map は同じキーの要素を許容しない
     - キーワードリストは同じキーも複数存在できる
 
-```elixer
+```elixir
 # タプルはパターンマッチでも利用可能
 {status, count, action} = {:ok, 42, "next"}
 > {:ok, 42, "next"}
@@ -47,7 +47,7 @@ Regex.scan ~r{[aeiou]}, "caterpillar"
 
 リストには便利な演算子が用意されている
 
-```elixer
+```elixir
 # 連結
 [1,2,3] ++ [4,5]
 # 差分
@@ -81,7 +81,7 @@ map = %{name: "bun", name: "hoge"}
 
 比較演算子
 
-```elixer
+```elixir
 a === b #型も含めた厳格な比較 1 === 1.0 はfalse
 a !== b # 1 !== 1.0 はtrue
 a == b " 1 == 1.0 は true
@@ -110,7 +110,7 @@ a && b
 - ローカル変数のスコープを定義
   - 計算中に一時的な変数が日宇町になってその変数が外に漏れてほしくない時
 
-```elixer
+```elixir
 content = "これが出力される"
 lp =
   with {:ok, file} = File.open("/etc/passwd"),

@@ -2,7 +2,7 @@
 
 関数定義
 
-```elixer
+```elixir
 sum = fn (a,b) -> a + b end
 sum.(1,2)
 > 3
@@ -13,19 +13,19 @@ sum.(1,2)
 
 関数が引数を取らなくても呼び出しにはカッコが必要
 
-```elixer
+```elixir
 greet = fn -> IO.puts("Hello") end
 greet.()
 ```
 
 関数定義の時にはパラメーターを囲むカッコは省略可能
 
-```elixer
+```elixir
 f1 = fn a,b -> a * b end
 ```
 
 sum.(2,3) という呼び出しで `a,b というパラメーターに 2,3 が代入される｀　という理解は誤り。
 
-**Elixer には代入はない**
+**elixir には代入はない**
 
 a,b に 2,3 をパラメーターマッチさせている。

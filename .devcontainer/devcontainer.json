@@ -1,5 +1,5 @@
 {
-  "name": "ElixerDevContainer",
+  "name": "elixirDevContainer",
   "image": "elixir:1.12.3",
   "extensions": [
     "jakebecker.elixir-ls",
